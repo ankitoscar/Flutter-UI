@@ -7,6 +7,7 @@ final ThemeData darkTheme = ThemeData(
   // ignore: deprecated_member_use
   textTheme: Typography(platform: defaultTargetPlatform).white,
   primaryColor: Colors.white,
+
   primaryTextTheme: const TextTheme(
     headline6: TextStyle(color: Colors.white),
   ),

@@ -23,19 +23,6 @@ class MultiSelectDialogItem<V> {
   const MultiSelectDialogItem(this.value, this.label);
 }
 
-// DatabaseService _databaseService = DatabaseService(uid: uID);
-
-// class MultiSelectDialog<V> extends StatefulWidget {
-//   final List<MultiSelectDialogItem<V>> items;
-
-//   final Set<V> initialSelectedValues;
-//   const MultiSelectDialog({Key key, this.items, this.initialSelectedValues})
-//       : super(key: key);
-
-//   @override
-//   State<StatefulWidget> createState() => _MultiSelectDialogState<V>();
-// }
-
 class UserPreference extends StatefulWidget {
   final UserData userData;
   const UserPreference(this.userData);

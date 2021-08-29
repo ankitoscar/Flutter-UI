@@ -62,6 +62,7 @@ AppBar MyAppBar(BuildContext buildContext) {
         icon: const Icon(
           Icons.search_rounded,
           size: 20,
+          //color: Colors.black,
         ),
         onPressed: () {},
       ),

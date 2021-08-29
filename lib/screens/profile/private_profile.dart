@@ -105,6 +105,7 @@ class PrivateProfile extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 child: Column(
                   children: <Widget>[
+                    //color
                     button(context, Theme.of(context).buttonColor,
                         'Add you Book', Routes.ADD_BOOK),
                     // button(context, blackButton, 'Settings', Routes.SETTINGS),

@@ -77,6 +77,7 @@ class _HomeState extends State<Home> {
             ],
           ),
           bottomNavigationBar: FloatingNavbar(
+            // unselectedItemColor:
             backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             selectedBackgroundColor: Theme.of(context).colorScheme.primary,
             selectedItemColor: Theme.of(context).scaffoldBackgroundColor,
