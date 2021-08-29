@@ -1,5 +1,5 @@
 import 'package:books_app/constants/api.dart';
-import 'package:books_app/constants/colors.dart';
+//import 'package:books_app/constants/colors.dart';
 import 'package:books_app/constants/routes.dart';
 import 'package:books_app/providers/book.dart';
 import 'package:books_app/providers/user.dart';
@@ -46,8 +46,8 @@ class PrivateProfile extends StatelessWidget {
             children: <Widget>[
               ProfileHeader(profileData: profileData),
               const Divider(
-                // color: Colors.black54,
-              ),
+                  // color: Colors.black54,
+                  ),
               Padding(
                 padding: const EdgeInsets.all(10),
                 child: Column(
@@ -105,17 +105,17 @@ class PrivateProfile extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 child: Column(
                   children: <Widget>[
-                    button(
-                        context, blackButton, 'Add you Book', Routes.ADD_BOOK),
+                    button(context, Theme.of(context).buttonColor,
+                        'Add you Book', Routes.ADD_BOOK),
                     // button(context, blackButton, 'Settings', Routes.SETTINGS),
-                    button(context, blackButton, 'Verify Mobile',
-                        Routes.VERIFY_MOBILE),
+                    button(context, Theme.of(context).buttonColor,
+                        'Verify Mobile', Routes.VERIFY_MOBILE),
                     GestureDetector(
                       onTap: () {
                         FirebaseAuthService().googleSignout();
                       },
-                      child: button(
-                          context, greenButton, 'Logout', Routes.INITIAL_PAGE),
+                      child: button(context, Theme.of(context).buttonColor,
+                          'Logout', Routes.INITIAL_PAGE),
                     )
                   ],
                 ),
@@ -166,9 +166,7 @@ class ProfileHeader extends StatelessWidget {
                   ? '${profileData.city} , ${profileData.state}'
                   : 'Update your location',
               style: GoogleFonts.poppins(
-                 
-                  fontSize: 13,
-                  fontWeight: FontWeight.w400),
+                  fontSize: 13, fontWeight: FontWeight.w400),
             ),
           ),
         ],

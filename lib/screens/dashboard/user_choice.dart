@@ -42,10 +42,16 @@ class UserChoice extends StatelessWidget {
                 child: AspectRatio(
                   aspectRatio: 343 / 52,
                   child: MaterialButton(
+                    color: Theme.of(context).colorScheme.primary,
                     child: Text(
                       'Personalize',
                       style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w500, fontSize: 16),
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16,
+                          color: Theme.of(context)
+                              .buttonTheme
+                              .colorScheme
+                              .onPrimary),
                     ),
                     onPressed: () async {
                       await showGeneralDialog(

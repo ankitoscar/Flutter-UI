@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 final ThemeData darkTheme = ThemeData(
   primarySwatch: Colors.grey,
@@ -9,17 +10,24 @@ final ThemeData darkTheme = ThemeData(
   primaryTextTheme: const TextTheme(
     headline6: TextStyle(color: Colors.white),
   ),
-  appBarTheme: const AppBarTheme(
-    backgroundColor: Color.fromRGBO(18, 19, 33, 1),
-    iconTheme: IconThemeData(color: Colors.white),
-    actionsIconTheme: IconThemeData(color: Colors.white),
+  buttonColor: Colors.blue,
+  buttonTheme: const ButtonThemeData(
+      colorScheme:
+          ColorScheme.light(primary: Colors.white, onPrimary: Colors.black)),
+  appBarTheme: AppBarTheme(
+    titleTextStyle: GoogleFonts.muli(color: Colors.white),
+    toolbarTextStyle: GoogleFonts.muli(color: Colors.white),
+    backgroundColor: const Color.fromRGBO(18, 19, 33, 1),
+    iconTheme: const IconThemeData(color: Colors.white),
+    actionsIconTheme: const IconThemeData(color: Colors.white),
     foregroundColor: Colors.white,
   ),
   // brightness: Brightness.dark,
   backgroundColor: const Color.fromRGBO(18, 19, 33, 1),
   scaffoldBackgroundColor: const Color.fromRGBO(18, 19, 33, 1),
   accentColor: Colors.white,
-  colorScheme: const ColorScheme.light(primary: Colors.white),
+  colorScheme: const ColorScheme.light(
+      brightness: Brightness.dark, primary: Colors.white),
   accentIconTheme: const IconThemeData(color: Colors.black),
   dividerColor: Colors.transparent,
 );
@@ -28,7 +36,19 @@ final ThemeData lightTheme = ThemeData(
   primarySwatch: Colors.grey,
   primaryColor: Colors.white,
   brightness: Brightness.light,
+  buttonColor: Colors.green,
+  buttonTheme: const ButtonThemeData(
+      colorScheme:
+          ColorScheme.light(primary: Colors.black, onPrimary: Colors.white)),
   backgroundColor: const Color(0xFFE5E5E5),
+  appBarTheme: AppBarTheme(
+    shadowColor: Colors.black,
+    titleTextStyle: GoogleFonts.muli(color: Colors.black),
+    toolbarTextStyle: GoogleFonts.muli(color: Colors.black),
+    iconTheme: const IconThemeData(color: Colors.black),
+    actionsIconTheme: const IconThemeData(color: Colors.black),
+    foregroundColor: Colors.black,
+  ),
   scaffoldBackgroundColor: Colors.white,
   colorScheme: const ColorScheme.dark(
       brightness: Brightness.light, primary: Colors.black),
